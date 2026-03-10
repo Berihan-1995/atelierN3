@@ -6,5 +6,5 @@ class Voiture:
     def afficherinformations(self):
         print(f"Matricule : {self.matricule}")
         print(f".Marque : {self.marque}")
-        print(f"Couleur : {self.couleur}"
-              )
+        print(f"Couleur : {self.couleur}")
+
