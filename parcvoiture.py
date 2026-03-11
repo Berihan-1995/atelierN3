@@ -9,13 +9,13 @@ class Voiture:
         print(f"Couleur : {self.couleur}")
 
 class Parc :
-    def __init__(self):
+    def __init__(self, id_parc, adresse, capacite):
         self.id_parc = id_parc
         self.adresse = adresse
         self.capacite = capacite
         self.liste_voiture = []
     def entrerVoiture(self, voiture):
-        if len(voiture.liste_voiture) >= self.capacite:
+        if len(self.liste_voiture) >= self.capacite:
             print("parc plein")
             return
         for v in self.liste_voiture:
@@ -43,4 +43,5 @@ parc.entrerVoiture(v2)
 parc.entrerVoiture(v3)
 
 parc.sortirVoiture("T0122")
+print("places libres:", parc.calculeNbrPlacesLibres())
 
