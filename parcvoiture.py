@@ -24,3 +24,11 @@ class Parc :
                 return
         self.liste_voiture.append(voiture)
         print("voiture ajouter aux parc")
+    def sortirVoiture(self, matricule):
+        for v in self.liste_voiture:
+            if v.matricule == matricule:
+                self.liste_voiture.remove(v)
+                print("voiture sortir")
+                return
+        print("voiture non pas dans le parc")
+
