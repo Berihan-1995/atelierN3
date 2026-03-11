@@ -33,5 +33,8 @@ class Parc :
         print("voiture non pas dans le parc")
     def calculeNbrPlacesLibres(self):
         return self.capacite - len(self.liste_voiture)
-
+parc = Parc(777, "parc Boreal", 3)
+v1= Voiture("T0121", "Mercedes", "Argent")
+v2= Voiture("T0122", "Volkswagen", "Bleu")
+v3= Voiture("T0123", "Chevrolet", "rouge")
 
