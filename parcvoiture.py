@@ -38,3 +38,7 @@ v1= Voiture("T0121", "Mercedes", "Argent")
 v2= Voiture("T0122", "Volkswagen", "Bleu")
 v3= Voiture("T0123", "Chevrolet", "rouge")
 
+parc.entrerVoiture(v1)
+parc.entrerVoiture(v2)
+parc.entrerVoiture(v3)
+
